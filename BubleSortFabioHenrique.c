@@ -1,22 +1,31 @@
 #include <stdio.h>
-int main (){
-    int vetor[5], aux;
+#include <stdlib.h>   
+int main (void){
 
-    for (int i = 0; i < 5; i++){
+
+    int qnt_elementos, aux, vetor;
+    int *n;
+
+    printf("Digite a quantidade de elementos do seu vetor \n");
+    scanf("%d", &qnt_elementos);
+    n =  (int *)(malloc (qnt_elementos * sizeof(int)));
+    
+
+    for (int i = 0; i < qnt_elementos; i++){
         printf("Numero posicao %d no vetor \n ", i);
-        scanf("%d", &vetor[i]);
+        scanf("%d", &n[i]);
     }
-    for (int x = 0; x < 5; x++){
-        for(int y = x; y < 5; y++){
-            if(vetor[x] > vetor[y]){
-                aux = vetor[x];
-                vetor[x] = vetor[y];
-                vetor[y] = aux;
+    for (int x = 0; x < qnt_elementos; x++){
+        for(int y = x; y < qnt_elementos; y++){
+            if(n[x] > n[y]){
+                aux = n[x];
+                n[x] = n[y];
+                n[y] = aux;
             }
         }
     }
-    if()
-    for ( int i = 0; i < 5; i++){
-        printf("numero %d eh: %d \n", i, vetor[i]);
+    for ( int i = 0; i < qnt_elementos; i++){
+        printf("numero %d eh: %d \n", i, n[i]);
     }
+    
 }
