@@ -1,18 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h> 
 #include <time.h>  
+
+int BubleSort(int qnt_elementos, int range_numero);
+
 int main (void){
 
+    BubleSort(10,40);
+   
+    }
 
-    int qnt_elementos, aux, range_numero;
+    int BubleSort(int qnt_elementos, int range_numero){
+    int aux;
     int *vetor; 
 
-    printf("Digite a quantidade de elementos do seu vetor \n");
-    scanf("%d", &qnt_elementos);
+   /* printf("Digite a quantidade de elementos do seu vetor \n");
+      scanf("%d", &qnt_elementos); 
+      Caso o usuario queira interagir com a interface
+      */
+
     vetor =  (int *)(malloc (qnt_elementos * sizeof(int)));
     srand(time(NULL));
-    printf("Informe ate que numero sera gerado os numeros aleatorios \n");
-    scanf("%d", &range_numero);
+
+    /*printf("Informe ate que numero sera gerado os numeros aleatorios \n");
+      scanf("%d", &range_numero); 
+      Caso o usuario queira interagir com a interface */
+      if(qnt_elementos == 0 || range_numero == 0)
+          printf("Os numeros dos argumentos sao invalidos, tente outros \n");
+      
+      else 
+          printf("Numeros validos para ordenacao, Ordenando \n");
+      
+
     for (int i = 0; i < qnt_elementos; i++){
        vetor[i] = rand() % range_numero;
     }
@@ -30,5 +49,5 @@ int main (void){
     }
     
     free(vetor);
-    
-}
+    }
+                
