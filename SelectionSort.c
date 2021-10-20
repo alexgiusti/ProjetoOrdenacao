@@ -1,16 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h> 
 
-int main(){
- 
-  /*  - Esperar método ser solicitado
-      - Receber o vetor
-  */
-
-  int tam, vetor[], i, j, k, t;
+void selectionSort (int vetor[], int tam){
+ int i, j, k, t;
 
   for(i=0; i<tam-1; i++){
-      for(k=1; k<tam; k++){
+      for(k=i+1; k<tam; k++){
           if(vetor[k] < vetor [i]{ 
             t = vetor[i];
             vetor[i] = vetor[k];
