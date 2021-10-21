@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h> 
-#include <time.h>  
+#include <time.h> 
+#include "BubleSortFabioHenrique.h"
+
 
 int BubleSort(int qnt_elementos, int range_numero);
 
 int main (void){
 
-    BubleSort(10,40);
+    BubleSort(50,80);
    
     }
 
@@ -14,17 +16,18 @@ int main (void){
     int aux;
     int *vetor; 
 
-   /* printf("Digite a quantidade de elementos do seu vetor \n");
+        
+    /* printf("Digite a quantidade de elementos do seu vetor \n");
       scanf("%d", &qnt_elementos); 
-      Caso o usuario queira interagir com a interface
-      */
+        Caso o usuario queira interagir com a interface */
+      
 
     vetor =  (int *)(malloc (qnt_elementos * sizeof(int)));
     srand(time(NULL));
-
-    /*printf("Informe ate que numero sera gerado os numeros aleatorios \n");
+    
+    /* printf("Informe ate que numero sera gerado os numeros aleatorios \n");
       scanf("%d", &range_numero); 
-      Caso o usuario queira interagir com a interface */
+       Caso o usuario queira interagir com a interface  */
       if(qnt_elementos == 0 || range_numero == 0)
           printf("Os numeros dos argumentos sao invalidos, tente outros \n");
       
