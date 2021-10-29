@@ -1,5 +1,5 @@
-#ifndef shellsort_h
-#define shellsort_h
+#ifndef selectionsort_h
+#define selectionsort_h
 
 int selectionSort (int vetor[], int tam){
  int i, j, k, t;
