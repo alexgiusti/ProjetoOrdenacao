@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h> 
+#ifndef shellsort_h
+#define shellsort_h
 
-void selectionSort (int vetor[], int tam){
+int selectionSort (int vetor[], int tam){
  int i, j, k, t;
 
   for(i=0; i<tam-1; i++){
@@ -18,5 +18,9 @@ void selectionSort (int vetor[], int tam){
   
   for(k=0; k<tam; k++){
       printf("%i\n", v[k]);
-  }
+   
+ return 0;
+  
+ }
 
+#endif
