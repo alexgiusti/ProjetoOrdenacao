@@ -1,3 +1,13 @@
+#include <stdlib.h>
+#include <stdlib.h>
+
+void mostraVetor(int vetor[], int tam)
+{
+    for (int j=0; j<tam; j++)
+       printf("%d ",vetor[j]);
+}
+
+
 int main()
 {
     int tam;
