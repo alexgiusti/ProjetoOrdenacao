@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "shellsort.h"
 
 void mostraVetor(int vetor[], int tam)
 {
-    for (int j=0; j<tam; j++)
-       printf("%d ",vetor[j]);
+	int i;
+    for (i=0; i<tam; i++)
+       printf("%d ",vetor[i]);
 }
 
 
@@ -15,7 +17,7 @@ int main()
     int metodo;
 
     printf("Bem vindo ao sistema de Organizacao de Vetores :)");
-    printf("\nPor favor, insira o tamanho do vetor que deseja ordenar:");
+    printf("\nPor favor, insira o tamanho do vetor que deseja ordenar: ");
     scanf("%d", &tam);
     printf("\n\nO tamanho do vetor selecionado foi de %d casas",tam);
 
