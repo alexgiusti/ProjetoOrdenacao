@@ -27,7 +27,7 @@ int BubleSort(int qnt_elementos, int range_numero){
       
 
     for (int i = 0; i < qnt_elementos; i++){
-       vetor[i] = rand() % range_numero;
+      // vetor[i] = rand() % range_numero;  
     }
     for (int x = 0; x < qnt_elementos; x++){
         for(int y = x; y < qnt_elementos; y++){
