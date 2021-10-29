@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "shellsort.h"
+#include "countingsort.h"
 
 void mostraVetor(int vetor[], int tam)
 {
@@ -30,7 +31,7 @@ int main()
 
 	mostraVetor(vetor, tam);
 	
-	printf("\n\nSelecione o metodo de ordenacao: \n\n1:Bubble Sort\n2:Selection Sort\n3:Insertion Sort\n4:Shell Sort\n\n");
+	printf("\n\nSelecione o metodo de ordenacao: \n\n1:Bubble Sort\n2:Selection Sort\n3:Insertion Sort\n4:Shell Sort\n5:Counting Sort\n\n");
 	scanf("%d", &metodo);
 	
 	switch(metodo)
@@ -50,6 +51,12 @@ int main()
 		case 4 :
 			printf("\n\nMetodo Shell Sort Selecionado\n\nVetor Ordenado: ");
 			shellSort(vetor, tam);
+			mostraVetor(vetor, tam);
+			break;
+			
+		case 5:
+			printf("\n\nMetodo Counting Sort Selecionado\n\nVetor Ordenado: ");
+			countingSort(vetor, tam);
 			mostraVetor(vetor, tam);
 			break;
 
