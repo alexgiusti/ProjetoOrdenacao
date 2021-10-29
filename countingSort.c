@@ -1,6 +1,6 @@
-#include "countingSort.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "countingsort.h"
 
 void countingSort(int nums[], int tam) {
   int output[10];
