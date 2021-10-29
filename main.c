@@ -51,7 +51,8 @@ int main()
 
 		case 3 :
 			printf("\n\nMetodo Insertion Sort Selecionado");
-			InsertionSort( vetor,  tam);
+			InsertionSort(vetor, tam);
+			mostraVetor(vetor, tam);
 
 			break;
 
