@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
-
 int main()
 {
     int tam;
@@ -14,14 +10,16 @@ int main()
     printf("\n\nO tamanho do vetor selecionado foi de %d casas",tam);
 
     int vetor[tam];
-    printf("\n\nVetor criado:");
+    printf("\n\nVetor criado: ");
     for(i = 0; i < tam; i++)
     {
         vetor[i]= rand() % tam*2;
-        printf(" %d",vetor[i]);
     } 
-	printf("Selecione o metodo de ordenacao: \n\n1:Bubble Sort\n2:Selection Sort\n3:Insertion Sort\n4:Shell Sort");
-	scanf("%d", &metodo)
+
+	mostraVetor(vetor, tam);
+	
+	printf("\n\nSelecione o metodo de ordenacao: \n\n1:Bubble Sort\n2:Selection Sort\n3:Insertion Sort\n4:Shell Sort\n\n");
+	scanf("%d", &metodo);
 	
 	switch(metodo)
 	{
@@ -38,12 +36,13 @@ int main()
 			break;
 
 		case 4 :
-			printf("\n\nMetodo Shell Sort Selecionado");
+			printf("\n\nMetodo Shell Sort Selecionado\n\nVetor Ordenado: ");
+			shellSort(vetor, tam);
+			mostraVetor(vetor, tam);
 			break;
 
 		default :
 			printf("\n\nMetodo Invalido");
 			break;												
 	}
-	getch();
 }
