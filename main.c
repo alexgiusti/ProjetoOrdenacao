@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "shellsort.h"
 #include "countingsort.h"
 #include "InsertionSort.h"
+#include "BubleSortFabioHenrique.h" 
 
 
 void mostraVetor(int vetor[], int tam)
@@ -40,6 +42,8 @@ int main()
 	{
 		case 1 :
 			printf("\n\nMetodo Bubble Sort Selecionado");
+			BubleSort(vetor, tam);
+			mostraVetor(vetor, tam);
 			break;
 
 		case 2 :
