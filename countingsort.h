@@ -1,5 +1,5 @@
-#ifndef COUNTINGSORT_H_INCLUDED
-#define COUNTINGSORT_H_INCLUDED
+#ifndef countingsort_h
+#define countingsort_h
 
 void countingSort(int nums[], int tam) {
   int output[10];
