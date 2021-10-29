@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "shellsort.h"
 #include "countingsort.h"
 #include "InsertionSort.h"
 #include "selectionSort.h"
+#include "BubleSortFabioHenrique.h"
 
 
 
