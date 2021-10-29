@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "shellsort.h"
 #include "countingsort.h"
+#include "InsertionSort.h"
+
 
 void mostraVetor(int vetor[], int tam)
 {
@@ -46,6 +48,8 @@ int main()
 
 		case 3 :
 			printf("\n\nMetodo Insertion Sort Selecionado");
+			InsertionSort( vetor,  tam);
+
 			break;
 
 		case 4 :
