@@ -51,12 +51,14 @@ int main()
 
 		case 2 :
 			printf("\n\nMetodo Selection Sort Selecionado");
-            		selectionsort(vetor, tam);
+            selectionSort(vetor, tam);
+            mostraVetor(vetor, tam);
 			break;
 
 		case 3 :
 			printf("\n\nMetodo Insertion Sort Selecionado");
-			InsertionSort( vetor,  tam);
+			InsertionSort(vetor, tam);
+			mostraVetor(vetor, tam);
 
 			break;
 
@@ -82,4 +84,3 @@ int main()
 			break;												
 	}
 }
-
