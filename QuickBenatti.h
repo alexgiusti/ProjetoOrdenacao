@@ -1,12 +1,12 @@
-#include<stdio.h>
-#include<stdlib.h>
+#ifndef QuickBenatti_h
+#define QuickBenatti_h
 
-
+/*
 void Quick(int vetor[], int esquerda, int direita);
  
 int main()
 {
-    /*
+    
 	int tam;
     int i;
 
@@ -21,7 +21,7 @@ int main()
     {
         vetor[i]= rand() % tam*2;
         printf(" %d",vetor[i]);
-    } */
+    } 
 
  Quick(vetor, 0, tam - 1);
 
@@ -32,9 +32,9 @@ int main()
  }
  system("pause");
  return 0;
-}
+}*/
 
-void Quick(int vetor[], int inicio, int fim){
+int Quick(int vetor[], int inicio, int fim){
    
    int pivo, aux, i, j, meio;
    
@@ -57,7 +57,9 @@ void Quick(int vetor[], int inicio, int fim){
       }
    }while(j > i);
    
+   
    if(inicio < j) Quick(vetor, inicio, j);
    if(i < fim) Quick(vetor, i, fim);   
+   	
 
 }
