@@ -1,5 +1,5 @@
-#ifndef QuickBenatti_h
-#define QuickBenatti_h
+#ifndef QuickBenatti_H
+#define QuickBenatti_H
 
 /*
 void Quick(int vetor[], int esquerda, int direita);
@@ -34,12 +34,12 @@ int main()
  return 0;
 }*/
 
-int Quick(int vetor[], int inicio, int fim){
+int Quick(int vetor[], int tam){
    
    int pivo, aux, i, j, meio;
    
-   i = inicio;
-   j = fim;
+   i = vetor[0];
+   j = vetor[tam];
    
    meio = (int) ((i + j) / 2);
    pivo = vetor[meio];
@@ -58,8 +58,11 @@ int Quick(int vetor[], int inicio, int fim){
    }while(j > i);
    
    
-   if(inicio < j) Quick(vetor, inicio, j);
-   if(i < fim) Quick(vetor, i, fim);   
+   if(vetor[0] < j) Quick(vetor, vetor[tam]);
+   if(vetor[0] < vetor[tam]) Quick(vetor, vetor[tam]);   
+   
+}
+   
+#endif
    	
 
-}
