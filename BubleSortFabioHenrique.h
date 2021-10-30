@@ -7,6 +7,7 @@ int BubleSort(int qnt_elementos, int range_numero){
     
     int aux;
     int *vetor; 
+    int i, k, x, y;
 
     printf("Digite a quantidade de elementos do seu vetor \n");
     scanf("%d", &qnt_elementos); 
@@ -26,11 +27,11 @@ int BubleSort(int qnt_elementos, int range_numero){
           printf("Numeros validos para ordenacao, Ordenando \n");
       
 
-    for (int k = 0; k < qnt_elementos; k++){
+    for (k = 0; k < qnt_elementos; k++){
        vetor[k] = rand() % range_numero;
     }
-    for (int x = 0; x < qnt_elementos; x++){
-        for(int y = x; y < qnt_elementos; y++){
+    for (x = 0; x < qnt_elementos; x++){
+        for(y = x; y < qnt_elementos; y++){
             if(vetor[x] > vetor[y]){
                 aux = vetor[x];
                 vetor[x] = vetor[y];
@@ -38,7 +39,7 @@ int BubleSort(int qnt_elementos, int range_numero){
             }
         }
     }
-    for ( int i = 0; i < qnt_elementos; i++){
+    for (i = 0; i < qnt_elementos; i++){
         printf("numero %d eh: %d \n", i, vetor[i]);
     }
     
