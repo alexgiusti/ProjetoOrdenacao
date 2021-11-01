@@ -46,7 +46,7 @@ int main()
 		case 1 :
 			printf("\n\nMetodo Bubble Sort Selecionado");
 			BubleSort(vetor, tam);
-			mostraVetor(vetor, tam);
+			
 			break;
 
 		case 2 :
